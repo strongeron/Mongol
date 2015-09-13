@@ -1,0 +1,89 @@
+.icon {
+    background-image: url("../img/pict/sprite.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.icon-ico-arrow-down {
+    width: 18px;
+    height: 29px;
+    background-position: -10px -10px;
+}
+
+.icon-ico-ballon {
+    width: 44px;
+    height: 65px;
+    background-position: -48px -10px;
+}
+
+.icon-ico-binokl {
+    width: 72px;
+    height: 34px;
+    background-position: -112px -10px;
+}
+
+.icon-ico-camera {
+    width: 65px;
+    height: 50px;
+    background-position: -112px -64px;
+}
+
+.icon-ico-glass {
+    width: 75px;
+    height: 28px;
+    background-position: -10px -134px;
+}
+
+.icon-ico-hand {
+    width: 56px;
+    height: 58px;
+    background-position: -105px -134px;
+}
+
+.icon-ico-mail {
+    width: 23px;
+    height: 17px;
+    background-position: -181px -134px;
+}
+
+.icon-ico-map-point {
+    width: 35px;
+    height: 50px;
+    background-position: -204px -10px;
+}
+
+.icon-ico-plane {
+    width: 41px;
+    height: 40px;
+    background-position: -224px -80px;
+}
+
+.icon-ico-question {
+    width: 40px;
+    height: 34px;
+    background-position: -224px -140px;
+}
+
+.icon-ico-slider-arrow {
+    width: 20px;
+    height: 33px;
+    background-position: -10px -194px;
+}
+
+.icon-ico-socio-fb {
+    width: 22px;
+    height: 23px;
+    background-position: -50px -194px;
+}
+
+.icon-ico-socio-inst {
+    width: 22px;
+    height: 23px;
+    background-position: -181px -194px;
+}
+
+.icon-ico-socio-vk {
+    width: 22px;
+    height: 23px;
+    background-position: -223px -194px;
+}
