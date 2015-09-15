@@ -38,31 +38,33 @@
 		</div>
 	</section>
 
-	<div class="container">
+	<!-- <div class="container"> -->
 	<!-- feautures -->
-		<div class="feautures row">
-			<div class="col s-3">
-			<div class="feautures-item feautures-item--reliablly">Современный надежный шар</div>
-			</div>
-			<div class="col s-3">
-			<div class="feautures-item feautures-item--learn">Обучение пилотирование</div>
-			</div>
-			<div class="col s-3">
-			<div class="feautures-item feautures-item--photo">Фотосъемка в полете</div>
-			</div>
-			<div class="col s-3">
-			<div class="feautures-item feautures-item--view">Потрясающие виды</div>
+		<div class="feautures">
+			<div class="container row">
+				<div class="col s-3">
+				<div class="feautures-item feautures-item--reliablly">Современный надежный шар</div>
+				</div>
+				<div class="col s-3">
+				<div class="feautures-item feautures-item--learn">Обучение пилотирование</div>
+				</div>
+				<div class="col s-3">
+				<div class="feautures-item feautures-item--photo">Фотосъемка в полете</div>
+				</div>
+				<div class="col s-3">
+				<div class="feautures-item feautures-item--view">Потрясающие виды</div>
+				</div>
 			</div>
 		</div>
-
 		<!-- about -->
-		<section class="about row">
+		<section class="about">
+			<div class="container row">
 			<div class="col s-4">
 				<h2 class="second-title">Вкратце</h2>
 				<p class="about_text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. 
 </p>
 				<p class="about_text">
-Мы предлагаем полетать с нами!</p>
+			Мы предлагаем полетать с нами!</p>
 			</div>
 			<div class="col s-8">
 				<div class="content-video">
@@ -70,10 +72,12 @@
 
 				</div>
 			</div>
+			</div>
 		</section>
 		
 		<!-- gallery -->
 		<section class="gallery">
+		<div class="container">
 			<h2 class="second-title second-title--center">Галерея</h2>
 		<!-- slider -->
 
@@ -95,15 +99,17 @@
 
 			<button class="slider_control slider_control--prev"></button><button class="slider_control slider_control--next"></button>
 		</div>
+		</div>
 		</section>
 
-	</div>
+	<!-- </div> -->
 
 	<!-- about fly -->
 	<section class="about-fly">
 		<div class="container">
 			<h2 class="second-title second-title--center">Как проходит полет</h2>
 		<div class="about-fly_process">
+		<img src="img\pict\bg-path.png">
 			<!-- ballon item -->
 			<div class="ballon ballon--1">
 				<div class="ballon_title">Взлет</div>
@@ -129,40 +135,41 @@
 		</div>
 		</div>
 
-		<div class="about-fly_bottom">
+		
+	</section>
+
+<div class="about-fly_bottom">
 			<div class="container row">
 				<div class="col s-6">
-					До ближайшего полета
+					<div class="counter-title">До ближайшего полета</div>
 				</div>
 				<div class="col s-6">
 					<div class="counter">
-						<div class="counter_item">2<span>дня</span></div>
-						<div class="counter_item">16<span>часов</span></div>
-						<div class="counter_item">8<span>минут</span></div>
-						<div class="counter_item">14<span>секунд</span></div>
+						<div class="counter_item">2<span class="counter-text">дня</span></div>
+						<div class="counter_item">16<span class="counter-text">часов</span class="counter-text"></div>
+						<div class="counter_item">8<span class="counter-text">минут</span></div>
+						<div class="counter_item">14<span class="counter-text">секунд</span></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</section>
-
-
 	<div class="container">
 		<div class="section payment row">
 			<div class="col s-5">
 			<h2 class="second-title">Рассчитать стоимость</h2>
-			<p class="payment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quis dignissimos blanditiis soluta pariatur voluptate minima accusantium rem non explicabo!</p>
-			<p class="payment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quis dignissimos blanditiis soluta pariatur voluptate minima accusantium rem non explicabo!</p>
-			<p class="payment_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est quis dignissimos blanditiis soluta pariatur voluptate minima accusantium rem non explicabo!</p>	
+			<p class="payment_text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
+			<p class="payment_text">Оболочка начинает заполняться теплым воздухом, и аэростат делает первый «вздох». 
+			</p>
+			<p class="payment_text">Выбирайте, куда мы полетим сегодня!</p>	
 			</div>
 			<div class="col s-6 to-right payment_form">
 			<form action="" method="">
 			<div class="row">
 					<div class="col s-4">
-						<label for="t1">Маршрут</label>
+						<label for="t1">Маршрут полета </label>
 					</div>
-					<div class="col s-8"><select name="" id="t1">
-							<option value=""></option>
+					<div class="col s-8"><select name="" id="t1" >
+							<option value="">Сестрорецк – Парнас</option>
 							<option value="">Туда сюда</option>
 						</select>
 					</div>
@@ -171,26 +178,19 @@
 					<div class="col s-4">
 						<label for="t1">Количество человек</label>
 					</div>
-					<div class="col s-2"><select name="" id="t1">
+					<div class="col s-8"><select name="" id="t1" >
 							<option value="">1</option>
 							<option value="">2</option>
 						</select>
 					</div>
-					<div class="col s-4">
-						<label for="t1">Дети</label>
-					</div>
-					<div class="col s-2"><select name="" id="t1">
-							<option value="">1</option>
-							<option value="">2</option>
-						</select>
-					</div>
+					
 			</div>
 			<div class="row">
 					<div class="col s-4">
 						<label for="t1">Имя</label>
 					</div>
 					<div class="col s-8">
-					<input type="text">
+					<input type="text"  value="Поля Фокус">
 					</div>
 			</div>
 			<div class="row">
@@ -198,12 +198,14 @@
 						<label for="t1">Телефон</label>
 					</div>
 					<div class="col s-8">
-					<input type="text">
+					<div class="telephone-block">
+					<input type="text" value="89215674566">
+					</div>
 					</div>
 			</div>
 			<div class="row">
 				<div class="col s-6">
-					<div class="payment_summary">Стоймость <span>9 000 Р</span></div>
+					<div class="payment_summary">Стоймость: <span class="big-price">9 000 Р</span></div>
 				</div>
 				<div class="col s-6">
 				<button type="submit" class="btn btn--blue">Полетели</button>	
@@ -224,24 +226,23 @@
 				<h3 class="payment_title">
 					Наличными
 				</h3>
-				<p>Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:
+				<p class="payment_text">Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
 
-					— по телефону: +7 (812) 640-19-39
-					— или по почте: mnebyvnebo@gmail.com
+					<p class="payment_text">— по телефону: +7 (812) 640-19-39 </br>
+					— или по почте: mnebyvnebo@gmail.com</p>
 
-					Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
+					<p class="payment_text">Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
 				</div>
 				<div class="payment-block">
 				<h3 class="payment_title">
 				Курьеру
 				</h3>
-				<p>Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:
+				<p class="payment_text">Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
+				<p class="payment_text">		
+					— по телефону: +7 (812) 640-19-39, </br>
+					— или по почте: mnebyvnebo@gmail.com</p>
 
-					— по телефону: +7 (812) 640-19-39,
-					— или по почте: 
-					    mnebyvnebo@gmail.com
-
-					Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
+				<p class="payment_text"> Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
 				</div>
 				</div>
 				</div>	
@@ -254,20 +255,20 @@
 				<!-- faq block -->
 				<div class="faq-block">
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="http://placehold.it/40x34" alt="">Что взять с собой в полет?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">Что взять с собой в полет?</h3>
 						<p class="faq_text">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
 					</div>
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="http://placehold.it/40x34" alt="">Что если мы улетим не в ту сторону?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">Что если мы улетим не в ту сторону?</h3>
 						<p class="faq_text">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
 					</div>
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="http://placehold.it/40x34" alt="">Что делать, если в полете станет плохо?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">Что делать, если в полете станет плохо?</h3>
 						<p class="faq_text">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
 
 					</div>
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="http://placehold.it/40x34" alt="">А полет – это действительно так здорово?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">А полет – это действительно так здорово?</h3>
 						<p class="faq_text">Это в тысячу раз лучше шоколада</p>
 					</div>
 				</div>
@@ -283,19 +284,23 @@
 		<div class="container">	
 			<div class="statistic-item">
 				<div class="statistic-item_number">700</div>
-				<div class="statistic-item_title">Lorem</div>
+				<div class="statistic-item_title">Полетов
+в год</div>
 			</div>
 			<div class="statistic-item">
 				<div class="statistic-item_number">300</div>
-				<div class="statistic-item_title">Lorem</div>
+				<div class="statistic-item_title">Средняя
+дальность в метрах</div>
 			</div>
 			<div class="statistic-item">
 				<div class="statistic-item_number">3</div>
-				<div class="statistic-item_title">Lorem</div>
+				<div class="statistic-item_title">Воздушных
+шара</div>
 			</div>
 			<div class="statistic-item">
 				<div class="statistic-item_number">12</div>
-				<div class="statistic-item_title">Lorem</div>
+				<div class="statistic-item_title">Человек
+в команде</div>
 			</div>
 		</div>
 	</div>
@@ -311,34 +316,34 @@
 			<div class="col s-3">
 			<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="http://placehold.it/160x160" alt=""></div>
+				<div class="team-item_image--1"><img src="img\team-1.png" alt=""></div>
 			<div class="team-item_name">Мария Мариева</div>
-			<div class="team item_work">Старший пилот</div>
+			<div class="team-item_work">Старший пилот</div>
 			</div>
 			</div>
 			<div class="col s-3">
 			<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="http://placehold.it/160x160" alt=""></div>
-				<div class="team-item_name">Мария Мариева</div>
-				<div class="team item_work">Старший пилот</div>
+				<div class="team-item_image"><img src="img\team-2.png" alt=""></div>
+				<div class="team-item_name">Надежда Надеждова</div>
+				<div class="team-item_work">Второй пилот</div>
 			</div>
 			</div>
 			<div class="col s-3">
 				<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="http://placehold.it/160x160" alt=""></div>
-				<div class="team-item_name">Мария Мариева</div>
-				<div class="team item_work">Старший пилот</div>
+				<div class="team-item_image"><img src="img\team-3.png" alt=""></div>
+				<div class="team-item_name">Ирина Иринова</div>
+				<div class="team-item_work">Авиадиспетчер</div>
 			</div>
 				
 			</div>
 			<div class="col s-3">
 				<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="http://placehold.it/160x160" alt=""></div>
-				<div class="team-item_name">Мария Мариева</div>
-				<div class="team item_work">Старший пилот</div>
+				<div class="team-item_image"><img src="img\team-4.png" alt=""></div>
+				<div class="team-item_name">Алена Аленова</div>
+				<div class="team-item_work">Авиатехник</div>
 			</div>
 			</div>
 		</div>
@@ -349,51 +354,54 @@
 		<h2 class="second-title second-title--center">Отзывы</h2>
 				<!-- slider -->
 
-		<div class="slider">
+		<div class="2photo-block">
 		<!-- item -->
-			<div class="slider_item feedback-item">
-				<img src="http://placehold.it/260x260" alt="">
-				<div class="feedback-item_name">Ольга</div>
-				<div class="feedback-item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, adipisci!</div>
+			<div class="2photo-block_item feedback-item">
+				<img src="img\feedback-1.png" alt="">
+				<div class="feedback-item_name">Ольга Алексеева</div>
+				<div class="feedback-item_text">Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</div>
 			</div>
 			<!-- item -->
-			<div class="slider_item feedback-item">
-				<img src="http://placehold.it/260x260" alt="">
-				<div class="feedback-item_name">Ольга</div>
-				<div class="feedback-item_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, adipisci!</div>
+			<div class="2photo-block_item feedback-item">
+				<img src="img\feedback-2.png" alt="">
+				<div class="feedback-item_name">Артем Рыбкин</div>
+				<div class="feedback-item_text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</div>
 			</div>
-			<button class="slider_control slider_control--prev">Назад</button><button class="slider_control slider_control--next">Вперед</button>
-				</div>
+							</div>
 				</section>
 	</div>
 
 
 <section class="contacts">
 <div class="container">
-	<div class="contacts_title">Запишите адрес аэропорта<span>Всеволожск, улица Аэродромная 19а</span></div>
-	<div class="row">
+	<div class="contacts_title"><img src="img\pict\ico-plane.png" alt=""> Запишите адрес аэропорта
+		<span class="street-name">Всеволожск, улица Аэродромная 19а</span>
+		</div>
+		<div class="row">
 		<div class="col s-4">
 			<div class="adress">
-				<div class="adress_title">Lorem</div>
-				<div class="adress_text">Lorem</div>
-				<div class="adress_phone">Lorem</div>
+				<div class="adress_title">Наш офис в Питере:</div>
+				<div class="adress_text">Литейный 14Б <br>
+12:00 - 19:00</div>
+				<div class="adress_phone">746-67-33</div>
 			</div>
 
 		</div>
 		<div class="col s-4">
 						<div class="adress">
-				<div class="adress_title">Lorem</div>
-				<div class="adress_text">Lorem</div>
-				<div class="adress_phone">Lorem</div>
-			</div>			
+				<div class="adress_title">Наш офис во Всеволожске:</div>
+				<div class="adress_text">Аэродромная 19А <br>
+12:00 - 19:00</div>
+				<div class="adress_phone">746-67-33</div>
+						</div>			
 
 		</div>
 		<div class="col s-4">
-		<a href="" class="email">email@email.com</a>	
+		<a href="" class="email"><img src="img\pict\sprite\ico-mail.png" alt="">email@email.com</a>	
 		<div class="socio">
-			<a href="#" class="socio_item socio_item--vk">Вконтакте</a>
-			<a href="#" class="socio_item socio_item--vk">Фейсбук</a>
-			<a href="#" class="socio_item socio_item--vk">Инстаграмм</a>
+			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-vk.png" alt=""></a>
+			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-fb.png" alt=""></a>
+			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-inst.png" alt=""></a>
 		</div>
 		</div>
 	</div>
@@ -401,13 +409,17 @@
 </section>
 	<!-- footer -->
 	<footer class="navigation-row">
+	<img src="img\pict\arrow-up-footer.png" alt="">
+
 		<div class="container row">
+
 		<div class="col s-3">
 			<!-- logo -->
-			<div class="log">Многольфьеркин и КО</div>
+			<div class="logo">Многольфьеркин и КО</div>
 		</div>
 			<div class="col s-9">
 			<!-- main nav  -->
+
 			<nav class="main-navigation">
 				<a href="#" class="main-navigation_item main-navigation_item--active">Кто мы</a>
 				<a href="#" class="main-navigation_item">Фотографии</a>
