@@ -441,6 +441,11 @@ transform:rotate(-180deg);
 padding-left: 6px;
   font-size: 22px;
 }
+.getting-started{
+font-size: 32px;
+}
+/* counter - new*/
+
 /*ballon*/
 
 .ballon {
@@ -522,7 +527,9 @@ padding-left: 6px;
 .payment_text{
   margin-bottom: 14px;
 }
+.getting-started {
 
+}
 /*form*/
 label{
  vertical-align: middle;

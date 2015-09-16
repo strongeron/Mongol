@@ -6,6 +6,8 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&ampsubset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.css">
 </head>
 <body>
 	<!-- header -->
@@ -80,9 +82,10 @@
 		<div class="container">
 			<h2 class="second-title second-title--center">Галерея</h2>
 		<!-- slider -->
-
+		
 		<div class="slider">
 		<!-- item -->
+		
 			<div class="slider_item">
 				<img src="img/slider--1.png" alt="">
 			</div>
@@ -96,8 +99,9 @@
 			<!--  -->
 			<div class="slider_item"><img src="img/slider--4.png" alt="">
 			</div>
-
+			
 			<button class="slider_control slider_control--prev"></button><button class="slider_control slider_control--next"></button>
+		
 		</div>
 		</div>
 		</section>
@@ -145,10 +149,12 @@
 				</div>
 				<div class="col s-6">
 					<div class="counter">
+					<div id="getting-started">
 						<div class="counter_item">2<span class="counter-text">дня</span></div>
 						<div class="counter_item">16<span class="counter-text">часов</span class="counter-text"></div>
 						<div class="counter_item">8<span class="counter-text">минут</span></div>
 						<div class="counter_item">14<span class="counter-text">секунд</span></div>
+					</div>
 					</div>
 				</div>
 			</div>
@@ -431,5 +437,14 @@
 			</div>	
 		</div>
 	</footer>
+		<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script type="text/javascript">
+  $('#getting-started').countdown('2016/01/12', function(event) {
+    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+  });
+</script>
 </body>
 </html>
