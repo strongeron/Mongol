@@ -5,9 +5,13 @@
 	<title>Mongol</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&ampsubset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.countdown.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.css">
+	<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.plugin.js"></script> 
+<script type="text/javascript" src="js/jquery.countdown.js"></script>
 </head>
 <body>
 	<!-- header -->
@@ -83,27 +87,36 @@
 			<h2 class="second-title second-title--center">Галерея</h2>
 		<!-- slider -->
 		
-		<div class="slider">
+		<div id="owl" class="owl-carousel">
 		<!-- item -->
 		
-			<div class="slider_item">
+			<div>
 				<img src="img/slider--1.png" alt="">
 			</div>
 			<!--  -->
-			<div class="slider_item">
-				<img src="img/slider--2.png" alt="">
+			<div>
+				<img src="img/slider--2.png" alt=""\>
 			</div>
 			<!--  -->
-			<div class="slider_item"><img src="img/slider--3.png" alt="">
+			<div>
+			<img src="img/slider--3.png" alt="">
 			</div>
 			<!--  -->
-			<div class="slider_item"><img src="img/slider--4.png" alt="">
+			<div>
+			<img src="img/slider--4.png" alt="">
+			</div> 
+			<div>
+			<img src="img/slider--5.png" alt="">
+			</div>
+			<div>
+			<img src="img/slider--6.png" alt="">
 			</div>
 			
-			<button class="slider_control slider_control--prev"></button><button class="slider_control slider_control--next"></button>
+<!-- 			<button class="slider_control slider_control--prev"></button><button class="slider_control slider_control--next"></button> -->
 		
 		</div>
 		</div>
+		
 		</section>
 
 	<!-- </div> -->
@@ -143,7 +156,8 @@
 	</section>
 
 <div class="about-fly_bottom">
-			<div class="container row">
+<div id="Countdown" class="countdown is-countdown"></div>
+	<!-- 		<div class="container row">
 				<div class="col s-6">
 					<div class="counter-title">До ближайшего полета</div>
 				</div>
@@ -157,7 +171,7 @@
 					</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
 		</div>
 	<div class="container">
 		<div class="section payment row">
@@ -182,7 +196,7 @@
 			</div>
 			<div class="row">
 					<div class="col s-4">
-						<label for="t1">Количество человек</label>
+						<label for="t1">Кол-во человек</label>
 					</div>
 					<div class="col s-8"><select name="" id="t1" >
 							<option value="">1</option>
@@ -196,7 +210,10 @@
 						<label for="t1">Имя</label>
 					</div>
 					<div class="col s-8">
-					<input type="text"  value="Поля Фокус">
+					<div class="inputs">
+					<i class="input-name"> </i>
+					<input type="text"  placeholder="Поля Фокус">
+					</div>
 					</div>
 			</div>
 			<div class="row">
@@ -204,8 +221,9 @@
 						<label for="t1">Телефон</label>
 					</div>
 					<div class="col s-8">
-					<div class="telephone-block">
-					<input type="text" value="89215674566">
+					<div class="inputs">
+					<i class="input-telephone"> </i> 
+					<input type="text" placeholder="89215674566">
 					</div>
 					</div>
 			</div>
@@ -440,11 +458,21 @@
 		<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/jquery.countdown.js"></script>
-	<script type="text/javascript">
-  $('#getting-started').countdown('2016/01/12', function(event) {
-    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
-  });
-</script>
+	<!-- Скрипт слайдера галереи -->
+	<script>
+jQuery(document).ready(function(){
+jQuery('.owl').owlCarousel({
+items:4,
+loop:true,
+mouseDrag: true,
+touchDrag: true,
+nav: true,
+navText: false,
+
+});
+});
+</script
+
+
 </body>
 </html>

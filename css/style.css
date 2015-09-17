@@ -367,8 +367,20 @@ cursor:pointer;
 .slider_item:hover{
 opacity: 1;
 }
+.owl-next,
+.owl-prev {
+width: 60px;
+height: 60px;
+background-repeat: no-repeat;
+}
+.owl-next{
+background-image: url(../img/pict/sprite/ico-slider-arrow-right.png);
+}
 
-.slider_control{
+.owl-prev{
+background-image: url(../img/pict/sprite/ico-slider-arrow-left.png);
+}
+/*.slider_control{
  position: absolute;
  top: 50%;
  margin-top: -17px;
@@ -392,7 +404,7 @@ right: 0;
 .slider_control--prev {
 left: 0;
 transform:rotate(-180deg);
-}
+}*/
 
 /*about-fly*/
 .about-fly{
@@ -533,21 +545,55 @@ font-size: 32px;
 /*form*/
 label{
  vertical-align: middle;
+margin-bottom: 20px;
+width: 400px;
+}
+.inputs{
+  border: 1px solid #d5d5d5;
+  position: relative;
+  width: 355px;
+  height: 40px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+.input-telephone{
+background-image: url("../img/pict/telephone-form.png");
+background-repeat: no-repeat;
+ position: absolute;
+height: 40px;
+  width: 19px;
+  height: 19px;
+  left: 0px;
+  margin: 10px 10px;
+}
+.input-name{
 
+background-image: url("../img/pict/user-form.png");
+background-repeat: no-repeat;
+ position: absolute;
+ 
+  width: 15px;
+  height: 15px;
+  left: 0px;
+  top: 1px;
+  margin: 10px 10px;
 }
 
+
 input {
- border: 1px solid #d5d5d5;
- border-radius: 4px;
+ /*border: 1px solid #d5d5d5;*/
+ position: relative;
+ border:transparent;
+ background-color: transparent;
+ 
  -webkit-border-radius: 4px;
  -moz-border-radius: 4px;
  margin-bottom: 20px;
  height: 40px;
  width: 355px;
  vertical-align: middle;
- padding-left: 5px;
-
-
+ padding-left: 38px;
+ outline: none;
  
 }
 
@@ -559,7 +605,9 @@ select {
  margin-bottom: 20px;
  height: 40px;
  width: 355px; 
+ padding-left: 5px;
  vertical-align: middle;
+  outline: none;
 }
 .btn--blue{
    border: none;
@@ -575,6 +623,7 @@ padding: 12px 36px ;
  vertical-align: middle;
 }
 .payment_summary{
+  margin-top: 10px;
   font-size: 18px;
   font-weight: 500;
 }
@@ -823,4 +872,17 @@ padding-right: 22px;
 .navigation-row img {
   float: right;
   padding-right: 20px;
+}
+.owl-next,
+.owl-prev {
+width: 20px;
+height: 33px;
+background-repeat: no-repeat;
+}
+.owl-next{
+background-image: url("../img/pict/sprite/arrow-right.png");
+}
+
+.owl-prev{
+background-image: url("../img/pict/sprite/arrow-left.png");
 }
