@@ -5,13 +5,18 @@
 	<title>Mongol</title>
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500&ampsubset=latin,cyrillic" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/jquery.countdown.css">
+	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
 	<link rel="stylesheet" href="css/owl.theme.css">
-	<link rel="stylesheet" href="css/style.css">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.plugin.js"></script> 
-<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/jquery.countdown.js"></script>
+	<script type="text/javascript">
+  $('#getting-started').countdown('2016/01/12', function(event) {
+    $(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
+  });
+</script>
 </head>
 <body>
 	<!-- header -->
@@ -23,13 +28,13 @@
 		</div>
 			<div class="col s-9">
 			<!-- main nav  -->
-			<nav class="main-navigation">
-				<a href="#" class="main-navigation_item main-navigation_item--active">Кто мы</a>
-				<a href="#" class="main-navigation_item">Фотографии</a>
-				<a href="#" class="main-navigation_item">План полета</a>
-				<a href="#" class="main-navigation_item">Заказать</a>_
-				<a href="#" class="main-navigation_item">Команда</a>
-				<a href="#" class="main-navigation_item">Контакты</a>
+			<nav id="menu" class="main-navigation">
+				<a href="#menu-about" class="main-navigation_item main-navigation_item--active">Кто мы</a>
+				<a href="#menu-photo" class="main-navigation_item">Фотографии</a>
+				<a href="#menu-plan" class="main-navigation_item">План полета</a>
+				<a href="#menu-order" class="main-navigation_item">Заказать</a>_
+				<a href="#menu-team" class="main-navigation_item">Команда</a>
+				<a href="#menu-contacts" class="main-navigation_item">Контакты</a>
 			</nav>
 			</div>	
 		</div>
@@ -64,7 +69,8 @@
 		</div>
 		<!-- about -->
 		<section class="about">
-			<div class="container row">
+			<div id="menu-about" class="container row">
+			<div class="section summary row">
 			<div class="col s-4">
 				<h2 class="second-title">Вкратце</h2>
 				<p class="about_text">Более 5 лет воздухоплавательная команда Нева-Аэро выполняет полёты на воздушных шарах для гостей и жителей Петербурга над одними из самых живописных мест России – Царским Селом и Павловском, возведенных в Пушкинском районе Санкт-Петербурга. 
@@ -74,78 +80,75 @@
 			</div>
 			<div class="col s-8">
 				<div class="content-video">
-					<img src="img/video.png" height="344" width="748" alt="">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/ebYt-jlCeL4" frameborder="0" allowfullscreen></iframe>
 
 				</div>
+			</div>
+			<div class="row border-down"></div>
 			</div>
 			</div>
 		</section>
 		
 		<!-- gallery -->
 		<section class="gallery">
-		<div class="container">
+		<div id="menu-photo" class="container">
 			<h2 class="second-title second-title--center">Галерея</h2>
 		<!-- slider -->
 		
-		<div id="owl" class="owl-carousel">
+				<div id="gallery-slider" class="owlCarousel" />
 		<!-- item -->
 		
-			<div>
-				<img src="img/slider--1.png" alt="">
+			<div class="slider_item">
+				<img src="img/slider--1.jpg" alt="slider--1" />
 			</div>
 			<!--  -->
-			<div>
-				<img src="img/slider--2.png" alt=""\>
+			<div class="slider_item">
+				<img src="img/slider--2.jpg" alt="slider--2" />
 			</div>
 			<!--  -->
-			<div>
-			<img src="img/slider--3.png" alt="">
+			<div class="slider_item"><img src="img/slider--3.jpg" alt="slider--3" />
 			</div>
 			<!--  -->
-			<div>
-			<img src="img/slider--4.png" alt="">
-			</div> 
-			<div>
-			<img src="img/slider--5.png" alt="">
+			<div class="slider_item"><img src="img/slider--4.jpg" alt="slider--4" />
 			</div>
-			<div>
-			<img src="img/slider--6.png" alt="">
+			<div class="slider_item"><img src="img/slider--5.jpg" alt="slider--5" />
+			</div>
+			<div class="slider_item"><img src="img/slider--6.jpg" alt="slider--6" />
 			</div>
 			
-<!-- 			<button class="slider_control slider_control--prev"></button><button class="slider_control slider_control--next"></button> -->
 		
 		</div>
 		</div>
-		
 		</section>
 
 	<!-- </div> -->
 
 	<!-- about fly -->
 	<section class="about-fly">
-		<div class="container">
+		<div id="menu-plan" class="container">
 			<h2 class="second-title second-title--center">Как проходит полет</h2>
 		<div class="about-fly_process">
-		<img src="img\pict\bg-path.png">
+		<img src="img\pict\bg-path.png" />
 			<!-- ballon item -->
 			<div class="ballon ballon--1">
 				<div class="ballon_title">Взлет</div>
 				<div class="ballon_image">1</div>
 			</div>
 			<div class="ballon ballon--2">
-				<div class="ballon_title">Взлет</div>
+				<div class="ballon_title">Набираем
+высоту</div>
 				<div class="ballon_image">2</div>
 			</div>
 			<div class="ballon ballon--3">
-				<div class="ballon_title">Взлет</div>
+				<div class="ballon_title">Летаем</div>
 				<div class="ballon_image">3</div>
 			</div>
 			<div class="ballon ballon--4">
-				<div class="ballon_title">Взлет</div>
+				<div class="ballon_title">Снижаемся</div>
 				<div class="ballon_image">4</div>
 			</div>
 			<div class="ballon ballon--5">
-				<div class="ballon_title">Взлет</div>
+				<div class="ballon_title">Садимся</div>
 				<div class="ballon_image">5</div>
 			</div>
 
@@ -155,9 +158,8 @@
 		
 	</section>
 
-<div class="about-fly_bottom">
-<div id="Countdown" class="countdown is-countdown"></div>
-	<!-- 		<div class="container row">
+<!-- <div class="about-fly_bottom">
+			<div class="container row">
 				<div class="col s-6">
 					<div class="counter-title">До ближайшего полета</div>
 				</div>
@@ -171,10 +173,21 @@
 					</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
+		</div> -->
+		<div class="countdown">
+			<div class="container clearfix">
+				<h2>До ближайшего полета:</h2>
+				<div id="timer">
+					<p id="days" class="timer-item"><span>104</span> <span class="timer-item--small">дня</span></p>
+					<p id="hours" class="timer-item"><span>2</span> <span class="timer-item--small">часа</span></p>
+					<p id="minutes" class="timer-item"><span>24</span> <span class="timer-item--small">минуты</span></p>
+					<p id="seconds" class="timer-item"><span>55</span> <span class="timer-item--small">секунд</span></p>
+				</div>
+			</div>
 		</div>
 	<div class="container">
-		<div class="section payment row">
+		<div id="menu-order" class="section payment row">
 			<div class="col s-5">
 			<h2 class="second-title">Рассчитать стоимость</h2>
 			<p class="payment_text">Итак, в назначенное время вы приехали на место полета. Команда уже готовит шар к полету - определяется направление ветра, запускаются горелки.</p>
@@ -182,13 +195,13 @@
 			</p>
 			<p class="payment_text">Выбирайте, куда мы полетим сегодня!</p>	
 			</div>
-			<div class="col s-6 to-right payment_form">
-			<form action="" method="">
+				<div class="col s-6 to-right payment_form">
+			<!-- <form action="" method=""> -->
 			<div class="row">
 					<div class="col s-4">
 						<label for="t1">Маршрут полета </label>
 					</div>
-					<div class="col s-8"><select name="" id="t1" >
+					<div class="col s-8"><select name="#" id="t1" >
 							<option value="">Сестрорецк – Парнас</option>
 							<option value="">Туда сюда</option>
 						</select>
@@ -198,7 +211,7 @@
 					<div class="col s-4">
 						<label for="t1">Кол-во человек</label>
 					</div>
-					<div class="col s-8"><select name="" id="t1" >
+					<div class="col s-8"><select name="#" id="t1" >
 							<option value="">1</option>
 							<option value="">2</option>
 						</select>
@@ -229,13 +242,13 @@
 			</div>
 			<div class="row">
 				<div class="col s-6">
-					<div class="payment_summary">Стоймость: <span class="big-price">9 000 Р</span></div>
+					<div class="payment_summary">Стоимость: <span class="big-price">9 000 Р</span></div>
 				</div>
 				<div class="col s-6">
 				<button type="submit" class="btn btn--blue">Полетели</button>	
 				</div>
 			</div>
-			</form>	
+			<!-- </form> -->	
 			</div>
 		</div>
 	
@@ -252,18 +265,18 @@
 				</h3>
 				<p class="payment_text">Вы можете оплатить услугу,  приехав к нам в офис. Для этого Вам необходимо предупредить об этом:</p>
 
-					<p class="payment_text">— по телефону: +7 (812) 640-19-39 </br>
+					<p class="payment_text">— по телефону: +7 (812) 640-19-39 <br>
 					— или по почте: mnebyvnebo@gmail.com</p>
 
 					<p class="payment_text">Оплачивая услугу в офисе, Вы получаете все документы подтверждающие оплату.</p>
 				</div>
 				<div class="payment-block">
-				<h3 class="payment_title">
+				<h3 class="payment_title_into">
 				Курьеру
 				</h3>
 				<p class="payment_text">Вы можете оплатить услугу в любом районе города и в удобное время, вызвав курьера. Для этого Вам необходимо связаться с нашими сотрудниками и сообщить об этом:</p>
 				<p class="payment_text">		
-					— по телефону: +7 (812) 640-19-39, </br>
+					— по телефону: +7 (812) 640-19-39, <br>
 					— или по почте: mnebyvnebo@gmail.com</p>
 
 				<p class="payment_text"> Оплачивая услугу курьером, Вы получаете все документы подтверждающие оплату.</p>
@@ -279,20 +292,20 @@
 				<!-- faq block -->
 				<div class="faq-block">
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">Что взять с собой в полет?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="" />Что взять с собой в полет?</h3>
 						<p class="faq_text">Обязательно возьмите с собой теплую одежду и немного вкусной еды, которую не нужно разогревать, а еще термос горячим чаем. А мы обязательно дадим вам теплые пледы</p>
 					</div>
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">Что если мы улетим не в ту сторону?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="#" />Что если мы улетим не в ту сторону?</h3>
 						<p class="faq_text">Каждый шар оснащен датчиками GPS, и все его перемещения фиксируются с точностью до метра, потеряться просто не получится. А наши пилоты такой ситуации не допустят вообще</p>
 					</div>
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">Что делать, если в полете станет плохо?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="#" />Что делать, если в полете станет плохо?</h3>
 						<p class="faq_text">В наших аптечках заготовлены в больших количествах разные лекарства, в том числе средства от укачивания, пакетики, а каждый пилот прошел специальную подготовку по оказанию первой помощи. В экстренной ситуациях сразу же совершим посадку. Мы не дадим вам оказаться в беде</p>
 
 					</div>
 					<div class="faq-block-item">
-						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="">А полет – это действительно так здорово?</h3>
+						<h3 class="question_title"><img class="question_icon" src="img\pict\sprite\ico-question.png" alt="#" />А полет – это действительно так здорово?</h3>
 						<p class="faq_text">Это в тысячу раз лучше шоколада</p>
 					</div>
 				</div>
@@ -332,15 +345,15 @@
 	<div class="container">
 		
 		<!-- team -->
-		<section class="team">
+		<section id="menu-team" class="team">
 		<h2 class="second-title second-title--center">Команда</h2>
 
 
 		<div class="row">
 			<div class="col s-3">
 			<!-- team item -->
-			<div class="team-item">
-				<div class="team-item_image--1"><img src="img\team-1.png" alt=""></div>
+			<div  class="team-item">
+				<div class="team-item_image"><img src="img\team-1.jpg" alt="#" /></div>
 			<div class="team-item_name">Мария Мариева</div>
 			<div class="team-item_work">Старший пилот</div>
 			</div>
@@ -348,7 +361,7 @@
 			<div class="col s-3">
 			<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="img\team-2.png" alt=""></div>
+				<div class="team-item_image"><img src="img\team-2.jpg" alt="#" /></div>
 				<div class="team-item_name">Надежда Надеждова</div>
 				<div class="team-item_work">Второй пилот</div>
 			</div>
@@ -356,7 +369,7 @@
 			<div class="col s-3">
 				<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="img\team-3.png" alt=""></div>
+				<div class="team-item_image"><img src="img\team-3.jpg" alt="#" /></div>
 				<div class="team-item_name">Ирина Иринова</div>
 				<div class="team-item_work">Авиадиспетчер</div>
 			</div>
@@ -365,7 +378,7 @@
 			<div class="col s-3">
 				<!-- team item -->
 			<div class="team-item">
-				<div class="team-item_image"><img src="img\team-4.png" alt=""></div>
+				<div class="team-item_image"><img src="img\team-4.jpg" alt="#" /></div>
 				<div class="team-item_name">Алена Аленова</div>
 				<div class="team-item_work">Авиатехник</div>
 			</div>
@@ -381,24 +394,24 @@
 		<div class="2photo-block">
 		<!-- item -->
 			<div class="2photo-block_item feedback-item">
-				<img src="img\feedback-1.png" alt="">
+				<img src="img\feedback-1.jpg" alt="#" />
 				<div class="feedback-item_name">Ольга Алексеева</div>
 				<div class="feedback-item_text">Оооо это было чудесно!!! Я не знала что воздушные шары такие огромные. Забавно, большой шар и маленькая корзинка. Полет восхитительный, выше всяких похвал. Мы побывали в самом красивом месте на Земле - в небе, оттуда открываются потрясающие виды.</div>
 			</div>
 			<!-- item -->
 			<div class="2photo-block_item feedback-item">
-				<img src="img\feedback-2.png" alt="">
+				<img src="img\feedback-2.jpg" alt="#" />
 				<div class="feedback-item_name">Артем Рыбкин</div>
 				<div class="feedback-item_text">Жене подарил полет на воздушном шаре. Сделал сюрприз на день рождения. Жена была в восторге, мне и самому понравилось, очень необычные ощущения от полета, хоть не самолет, а летит быстро, маршрут подобрали красивый. Cпасибо вам, нам все понравилось.</div>
 			</div>
 							</div>
 				</section>
-	</div>
+	
 
 
-<section class="contacts">
+<section id="menu-contacts" class="contacts">
 <div class="container">
-	<div class="contacts_title"><img src="img\pict\ico-plane.png" alt=""> Запишите адрес аэропорта
+	<div class="contacts_title"><img src="img\pict\ico-plane.png" alt="#" /> Запишите адрес аэропорта
 		<span class="street-name">Всеволожск, улица Аэродромная 19а</span>
 		</div>
 		<div class="row">
@@ -421,11 +434,11 @@
 
 		</div>
 		<div class="col s-4">
-		<a href="" class="email"><img src="img\pict\sprite\ico-mail.png" alt="">email@email.com</a>	
+		<a href="" class="email"><img src="img\pict\sprite\ico-mail.png" alt="#" />email@email.com</a>	
 		<div class="socio">
-			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-vk.png" alt=""></a>
-			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-fb.png" alt=""></a>
-			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-inst.png" alt=""></a>
+			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-vk.png" alt="#" /></a>
+			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-fb.png" alt="#" /></a>
+			<a href="#" class="socio_item socio_item--vk"><img src="img\pict\sprite\ico-socio-inst.png" alt="#" /></a>
 		</div>
 		</div>
 	</div>
@@ -433,7 +446,7 @@
 </section>
 	<!-- footer -->
 	<footer class="navigation-row">
-	<img src="img\pict\arrow-up-footer.png" alt="">
+	<img src="img\pict\arrow-up-footer.png" alt="#" />
 
 		<div class="container row">
 
@@ -444,35 +457,17 @@
 			<div class="col s-9">
 			<!-- main nav  -->
 
-			<nav class="main-navigation">
-				<a href="#" class="main-navigation_item main-navigation_item--active">Кто мы</a>
-				<a href="#" class="main-navigation_item">Фотографии</a>
-				<a href="#" class="main-navigation_item">План полета</a>
-				<a href="#" class="main-navigation_item">Заказать</a>_
-				<a href="#" class="main-navigation_item">Команда</a>
-				<a href="#" class="main-navigation_item">Контакты</a>
+			<nav id="menu" class="main-navigation">
+				<a href="#menu-about" class="main-navigation_item main-navigation_item--active">Кто мы</a>
+				<a href="#menu-photo" class="main-navigation_item">Фотографии</a>
+				<a href="#menu-plan" class="main-navigation_item">План полета</a>
+				<a href="#menu-order" class="main-navigation_item">Заказать</a>_
+				<a href="#menu-team" class="main-navigation_item">Команда</a>
+				<a href="#menu-contacts" class="main-navigation_item">Контакты</a>
 			</nav>
 			</div>	
 		</div>
 	</footer>
-		<script src="js/jquery-2.1.4.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/script.js"></script>
-	<!-- Скрипт слайдера галереи -->
-	<script>
-jQuery(document).ready(function(){
-jQuery('.owl').owlCarousel({
-items:4,
-loop:true,
-mouseDrag: true,
-touchDrag: true,
-nav: true,
-navText: false,
-
-});
-});
-</script
-
 
 </body>
 </html>
